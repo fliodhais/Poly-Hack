@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective: 1000px;
+  perspective: 100px;
 }
 
 .container {
@@ -130,12 +130,12 @@ button.active {
   color: white;
 }
 
-section {
+section.section-1{
   height: 100vh;
   color: black;
 }
 
-section h1 {
+section.section-1 h1 {
   padding-top: 300px;
   text-align: center;
   font-size: 80px;
