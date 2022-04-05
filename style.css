@@ -48,6 +48,25 @@ html, body{
     font-size: 5vh;
 }
 
+/* Schedule */
+.scheduleBar{
+    width: 100%;
+    height: 50%;
+    border-radius: 25px;
+    padding: 30px;
+}
+/* Reference: https://css-tricks.com/css-link-hover-effects/ */
+.scheduleLink {
+  box-shadow: inset 0 0 0 0 #f3d562;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.scheduleLink:hover {
+  box-shadow: inset 500px 0 0 0 #d4815f;
+}
+
+/* Price */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -59,6 +78,7 @@ th, td {
   padding: 8px;
 }
 
+/* FAQs */
 /* Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
 details {
     border: 1px solid #aaa;
@@ -83,6 +103,7 @@ details[open] summary {
     margin-bottom: .5em;
 }
 
+/* Sponsors */
 .sponsorSection{
     width: 100%;
     height: 100%;
