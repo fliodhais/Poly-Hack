@@ -65,11 +65,9 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-              Book Music & Comedy Events
-              <br />
-              anywhere in New York
+            PolyHack 2022
           </Heading>
-          <PrimaryAction>Search Events Near Me</PrimaryAction>
+          <PrimaryAction>Find out more</PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>

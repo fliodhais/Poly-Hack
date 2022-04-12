@@ -37,8 +37,8 @@ const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
 
 
 export default ({
-  heading = "Better, Faster and Cheaper Cloud.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  heading = "PolyHack 2022.",
+  description = "PolyHack is The Hong Kong Polytechnic University's largest hackathon. It is an Asia-wise competition organized by students. At PolyHack, we want to help you grow and bring your imaginations into reality. Regardless of your background, you will be able to participate with resources and mentors we will provide to help you progress with your projects. We will have free workshops, mentorships, prizes, games and more to help you learn new techniques for your future projects or just for you to explore outside of a classroom. Don't have a team, or even an idea? We'll help you expand your creativity to build an exceptional project!",
   imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
   imageDecoratorBlob = true,
   primaryButtonUrl = "https://google.com",
