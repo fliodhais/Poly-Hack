@@ -18,6 +18,7 @@ hr{
 
 .header {
     width: 100%;
+    height: 100px;
     background-color: #f4f2ea;
     position: fixed;
     top: 0;
@@ -209,9 +210,8 @@ details[open] summary {
 span.text-content {
     background: rgba(0,0,0,0.5);
     color: white;
-    height: 200px;
+    height: 300px;
     width: 1250px;
-    padding-top:100px;
     text-align:center;
     opacity: 0;
     position:absolute;
@@ -234,4 +234,23 @@ span.text-content span {
     .image-frame{width:98%;}
     .image-frame img{height:400px;} 
     span.text-content{width:94.5%;}
+}
+
+
+
+/*------------------------------------------------*/
+@media only screen and (max-width: 620px){
+    html, body{
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h1{
+        font-size: 3vh;
+    }
+    h2{
+        font-size: 2vh;
+    }
+    .button {}
+    .intro{font-size: 3vh;}
 }
