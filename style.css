@@ -18,7 +18,6 @@ hr{
 
 .header {
     width: 100%;
-    height: 100px;
     background-color: #f4f2ea;
     position: fixed;
     top: 0;
@@ -86,25 +85,11 @@ hr{
     position: absolute;
     top: 45%;
     max-width: 40vw;
+    font-size: 1.5vw;
 }
 
 .flexDisplay{
     display:flex;
-}
-@media only screen and (max-width: 620px){
-    html, body{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .box{
-        margin-left: 0;
-        margin-top: 5vh;
-        width: 100%;
-        height: 50%;
-    }
-    .flexDisplay{
-        display:block;
-    }
 }
 
 .intro{
@@ -115,7 +100,8 @@ hr{
 .scheduleBar{
     width: 100%;
     border-radius: 25px;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Price */
@@ -166,9 +152,6 @@ details[open] summary {
     width: 350px;
     height: 200px;
     object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 .row .row4{
     width: 250px;
@@ -225,6 +208,7 @@ span.text-content span {
     text-align: center;
     vertical-align: middle;
 }
+/*
 @media screen and (max-width: 956px){
     .image-frame{width:47.25%;hieght:300px;}
     .image-frame img{height:325px;}
@@ -235,13 +219,13 @@ span.text-content span {
     .image-frame img{height:400px;} 
     span.text-content{width:94.5%;}
 }
+*/
 
 
 
 /*------------------------------------------------*/
 @media only screen and (max-width: 620px){
     html, body{
-        margin: 0;
         padding-left: 0;
         padding-right: 0;
     }
@@ -251,6 +235,48 @@ span.text-content span {
     h2{
         font-size: 2vh;
     }
-    .button {}
+    .header{
+        position: relative;
+    }
+    .logo{
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    .header-right {float: none;padding-right: 0;}
+    .button {
+        margin: 0 0;
+        width: 100%;
+    }
     .intro{font-size: 3vh;}
+    .box{
+        margin-left: 0;
+        margin-top: 1vh;
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        position: relative;
+        top: 0;
+        font-size: 4vh;
+    }
+    .box h2{
+        position: relative;
+        top: 0;
+    }
+    .box p{
+        position: relative;
+        max-width: 100%;
+        top: 0;
+        font-size: 2vh;
+    }
+    .flexDisplay{
+        display:block;
+    }
+    .image-frame{width:100%;margin: 0;}
+    .image-frame img{height:100%;} 
+    span.text-content{width:100%;}
+
+    .row{display: block;}
 }
