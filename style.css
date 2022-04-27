@@ -19,12 +19,15 @@ hr{
 .header {
     width: 100%;
     background-color: #f4f2ea;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1;
+    right: 0;
+    left: 0;
+    z-index: 150;
 }
 .header-right {
-  float: right;
+    padding-right: 50px;
+    float: right;
 }
 .button {
     background-color: #f4f2ea;
@@ -56,6 +59,7 @@ hr{
 }
 
 .logo {
+    padding-left: 60px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -63,31 +67,29 @@ hr{
 }
 .title {
     position: absolute;
-    top: 50%;
+    top: 45%;
     font-size: 5vw;
 }
 .box{
+    margin-top: 50px;
     width: 50vw;
+    height: 45vw;
     /*border-style: solid;
-    border-color: white;*/
+    border-color: black;*/
 }
+.box h2{
+    position: absolute;
+    top: 35%;
+}
+.box p{
+    position: absolute;
+    top: 45%;
+    max-width: 40vw;
+    font-size: 1.5vw;
+}
+
 .flexDisplay{
     display:flex;
-}
-@media only screen and (max-width: 620px){
-    html, body{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .box{
-        margin-left: 0;
-        margin-top: 5vh;
-        width: 100%;
-        height: 50%;
-    }
-    .flexDisplay{
-        display:block;
-    }
 }
 
 .intro{
@@ -98,7 +100,8 @@ hr{
 .scheduleBar{
     width: 100%;
     border-radius: 25px;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Price */
@@ -136,14 +139,144 @@ details[open] summary {
     margin-bottom: .5em;
 }
 
-/* Sponsors */
-.sponsorSection{
-    width: 100%;
-    height: 100%;
-    /*border-style: solid;
-    border-color: black;*/
+.row{
+    display: flex;
+    justify-content: center;
 }
-.sponsors{
-    margin: 10px;
-    max-width: 40%;
+.row .row1{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+.row3{
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+}
+.row .row4{
+    width: 250px;
+    height: 90px;
+    object-fit: contain;
+}
+.row .row5{
+    width: 150px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/*------------------------------------------------*/
+
+.image-frame{
+    display:inline-block;
+    border:1px solid #000;
+    width:23.36%;
+    margin:5px;
+    height: 300px;
+    width: 1250px;
+    overflow: hidden;
+}
+.image-frame img{
+    height: 300px;
+    width: 1250px;
+    object-fit:cover;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.image-frame:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter:blur(3px);
+    filter: blur(3px);
+}
+span.text-content {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    height: 300px;
+    width: 1250px;
+    text-align:center;
+    opacity: 0;
+    position:absolute;
+}
+.image-frame:hover span.text-content {
+    opacity: 1;
+    z-index:100;
+}
+span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+/*
+@media screen and (max-width: 956px){
+    .image-frame{width:47.25%;hieght:300px;}
+    .image-frame img{height:325px;}
+    span.text-content{width:46.2%;}
+}
+@media screen and (max-width: 544px){
+    .image-frame{width:98%;}
+    .image-frame img{height:400px;} 
+    span.text-content{width:94.5%;}
+}
+*/
+
+
+
+/*------------------------------------------------*/
+@media only screen and (max-width: 620px){
+    html, body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h1{
+        font-size: 3vh;
+    }
+    h2{
+        font-size: 2vh;
+    }
+    .header{
+        position: relative;
+    }
+    .logo{
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    .header-right {float: none;padding-right: 0;}
+    .button {
+        margin: 0 0;
+        width: 100%;
+    }
+    .intro{font-size: 3vh;}
+    .box{
+        margin-left: 0;
+        margin-top: 1vh;
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        position: relative;
+        top: 0;
+        font-size: 4vh;
+    }
+    .box h2{
+        position: relative;
+        top: 0;
+    }
+    .box p{
+        position: relative;
+        max-width: 100%;
+        top: 0;
+        font-size: 2vh;
+    }
+    .flexDisplay{
+        display:block;
+    }
+    .image-frame{width:100%;margin: 0;}
+    .image-frame img{height:100%;} 
+    span.text-content{width:100%;}
+
+    .row{display: block;}
 }
