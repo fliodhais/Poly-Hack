@@ -168,7 +168,7 @@ details[open] summary {
 
 .image-frame{
     display:inline-block;
-    border:1px solid #000;
+    /*border:1px solid #000;*/
     width:23.36%;
     margin:5px;
     height: 300px;
@@ -245,10 +245,7 @@ span.text-content span {
         height: 50px;
     }
     .header-right {float: none;padding-right: 0;}
-    .button {
-        margin: 0 0;
-        width: 100%;
-    }
+    .button {display: none;}
     .intro{font-size: 3vh;}
     .box{
         margin-left: 0;
@@ -277,6 +274,7 @@ span.text-content span {
     .image-frame{width:100%;margin: 0;}
     .image-frame img{height:100%;} 
     span.text-content{width:100%;}
+    span > h2{font-size: 4vh;}
 
     .row{display: block;}
 }
