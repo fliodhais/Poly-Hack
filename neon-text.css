@@ -1,0 +1,25 @@
+@import "color-var.css";
+.neon {
+  color: #fff;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+@keyframes neon {
+  from {
+    text-shadow: 
+        0 0 10px #fff,
+        0 0 20px #fff, 
+        0 0 40px #fff,
+        0 0 80px var(--Orange),
+        0 0 100px var(--Orange),
+        0 0 100px var(--Megenta);
+  }
+  to {
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px var(--Orange),
+        0 0 35px var(--Orange),
+        0 0 35px var(--Megenta);
+  }
+}
