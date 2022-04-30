@@ -31,6 +31,7 @@
 	top: 0;
 	right: 0;
 
+	border-radius: 0.5em;
 	box-shadow: 0 0 0.75em 0.25em var(--Megenta);
 	opacity: 0;
 	transition: opacity 100ms linear;
@@ -56,7 +57,7 @@
 }
 .neon-button#schedule{
 	font-size: 2.6rem;
-	background-color: #170e39;
+	background-color: transparent;
 
 	color: var(--Brick-Red);
 	border: var(--Brick-Red) 0.125em solid;
