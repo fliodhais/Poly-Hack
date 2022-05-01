@@ -40,11 +40,11 @@ div#div5 h1{position: absolute; font-size: 4rem;}
     position: relative;
     /*border: 2px solid white;*/
 }
-#div1{background-image: url("./static/images/1.png");}
-#div2{background-image: url("./static/images/2.png");}
-#div3{background-image: url("./static/images/3.png");}
-#div4{background-image: url("./static/images/4.png");}
-#div5{background-image: url("./static/images/5.png");}
+#div1{background-image: url("./images/1.png");}
+#div2{background-image: url("./images/2.png");}
+#div3{background-image: url("./images/3.png");}
+#div4{background-image: url("./images/4.png");}
+#div5{background-image: url("./images/5.png");}
 
 /* Welcome */
 div#div1 h1{
