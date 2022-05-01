@@ -59,16 +59,19 @@ div#div1 p{
     font-size: 1.5em;
     max-width: 40rem;
 }
+
 /* Theme */
 div#div2 h1{
     top: 8rem;
     left: 15rem;
 }
+
 /* Schedule */
 div#div3 h1{
     top: 10rem;
     right: 18rem;
 }
+
 /* Prizes and Awards */
 div#div4 h1{
     top: 3rem;
@@ -78,11 +81,67 @@ div#div4 h1{
 div#div4 div{
     padding: 14rem 15rem 3rem 15rem;
 }
-/* Sponsors */
+/* Supporting Organizations */
 div#div5 h1{
-    top: 3rem;
-    left: 20rem;
+    left: 5rem;
 }
+
+/*---------------------Organizers---------------------------*/
+div#Organizers{
+    border: 1px solid transparent;
+    padding: 0 5em 5em 5em;
+    background-color: var(--wh-blue);
+}
+div#Organizers h1{ color: var(--Dark-Purple); text-align: right; font-size: 4rem; }
+div#Organizers img{ max-width: 33%; }
+div#Organizers img:hover{ transform: scale(1.2); }
+/*---------------------Sponsors---------------------------*/
+div#Sponsors{
+    border: 1px solid transparent;
+    padding: 0 5em 5em 5em;
+    background-color: var(--wh-blue);
+}
+div#Sponsors h1{ color: var(--Dark-Purple); font-size: 4rem; }
+div#Sponsors h2{ color: var(--Dark-Purple); }
+div#Sponsors img{ display: block; margin-right: auto; margin-left: auto; padding: 1.5em;}
+#Deloitte{max-width: 25%;}
+#ServiceNow{max-width: 35%;}
+#COP{max-width: 35%;}
+#gCloud{max-width: 35%;}
+div#Sponsors img:hover{ transform: scale(1.2); }
+/*---------------------Supporting Organizations---------------------------*/
+div#div5 img{ position: absolute; background-color: var(--wh-blue); border-radius: 1em; padding: 1em;}
+div#div5 img#EDC{
+    left: 20em;
+    top: 10em;
+    width: 33%;
+}
+div#div5 img#ESP{
+    right: 5em;
+    top: 10em;
+    width: 25%;
+}
+div#div5 img#FENG{
+    left: 6em;
+    top: 20em;
+    width: 25%;
+}
+div#div5 img#COMP{
+    left: 33em;
+    top: 23em;
+    width: 25%;
+}
+div#div5 img#Toast{
+    right: 6em;
+    top: 20em;
+    width: 23%;
+}
+div#div5 img#HKBS{
+    left: 15em;
+    top: 35em;
+    width: 20%;
+}
+div#div5 img:hover{ transform: scale(1.2); }
 /*---------------------Theme---------------------------*/
 div#div2 div{
     position: absolute;
@@ -139,4 +198,11 @@ details[open] {
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
+}
+
+/*----------------------------------------------------*/
+@media only screen and (max-width: 620px){
+    #div1, #div2, #div3, #div4, #div5{
+        background-image: none;
+    }
 }

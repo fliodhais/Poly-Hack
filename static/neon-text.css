@@ -35,8 +35,8 @@ div#div2 h2.neon{
         0 0 20px #fff, 
         0 0 40px #fff,
         0 0 80px var(--Purple),
-        0 0 100px var(--Purple),
-        0 0 100px var(--Purple);
+        0 0 120px var(--Purple),
+        0 0 120px var(--Purple2);
   }
   to {
     text-shadow: 
@@ -45,7 +45,7 @@ div#div2 h2.neon{
         0 0 20px #fff,
         0 0 30px var(--Purple),
         0 0 35px var(--Purple),
-        0 0 35px var(--Purple);
+        0 0 35px var(--Purple2);
   }
 }
 
