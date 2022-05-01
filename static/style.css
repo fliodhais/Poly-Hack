@@ -36,7 +36,7 @@ div#div5 h1{position: absolute; font-size: 4rem;}
     height: 100vh;
     background-image: url("./static/images/1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     /*border: 2px solid white;*/
 }
