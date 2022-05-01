@@ -11,7 +11,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-h1{position: absolute; font-size: 4rem;}
+div#div1 h1,
+div#div2 h1,
+div#div3 h1,
+div#div4 h1,
+div#div5 h1{position: absolute; font-size: 4rem;}
 
 .header {
     width: 100vw;
@@ -42,10 +46,12 @@ h1{position: absolute; font-size: 4rem;}
 #div4{background-image: url("./static/images/4.png");}
 #div5{background-image: url("./static/images/5.png");}
 
+/* Welcome */
 div#div1 h1{
     top: 8rem;
     right: 20rem;
 }
+/* Welcome */
 div#div1 p{
     position: absolute;
     top: 20rem;
@@ -53,22 +59,42 @@ div#div1 p{
     font-size: 1.5em;
     max-width: 40rem;
 }
+/* Theme */
 div#div2 h1{
     top: 8rem;
     left: 15rem;
 }
+/* Schedule */
 div#div3 h1{
     top: 10rem;
     right: 18rem;
 }
+/* Prizes and Awards */
 div#div4 h1{
     top: 3rem;
     left: 20rem;
 }
+/* Prizes and Awards */
 div#div4 div{
-    padding: 14rem 15rem 0 15rem;
+    padding: 14rem 15rem 3rem 15rem;
 }
-
+/* Sponsors */
+div#div5 h1{
+    top: 3rem;
+    left: 20rem;
+}
+/*---------------------Theme---------------------------*/
+div#div2 div{
+    position: absolute;
+    top: 18rem;
+    left: 5.5rem;
+    max-width: 33%; /* Relative to #div2 (width = full width) */
+    /*border: 1px solid white;*/
+    padding: 0 2em 2em 2em;
+}
+div#div2 h2{ font-size: 3rem; }
+div#div2 p{ font-size: 1.5rem; }
+/*---------------------Prizes---------------------------*/
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -83,7 +109,13 @@ th, td {
     text-align: left;
     padding: 8px;
 }
-
+/*---------------------FAQs---------------------------*/
+div#divFAQ{
+    /*border: 1px solid #aaa;*/
+    padding: 5em;
+}
+div#divFAQ h1{ font-size: 4rem; }
+div#divFAQ h2{ font-size: 2rem; }
 /* Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
 details {
     border: 1px solid #aaa;
@@ -93,11 +125,14 @@ details {
 
 summary {
     font-size: 3vh;
-    margin: -.5em -.5em 0;
+    margin: -.5em 0 0;
     padding: .5em;
 }
 
 details[open] {
+    border: 0.15em solid var(--Orange);
+    box-shadow: inset 0 0 0.5em 0.25em var(--Orange), 0 0 0.5em 0.25em var(--Orange), inset 0 0 0.25em 0 #fff, 0 0 0.25em 0 #fff;
+    font-size: 1.7em;
     padding: .5em;
 }
 
@@ -105,17 +140,3 @@ details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
 }
-/*------------------------------------------------*/
-div#div2 button{
-    position: absolute;
-    top: 20rem;
-    left: 15rem;
-    max-width: 30rem;
-}
-div#div2 buttonn:hover span {
-  display: none
-}
-div#div2 button:hover:before {
-  content: "Explore the different, innovative technologies that can be implemented in the areas of blockchain, FinTech and Smart-city. Make use of your own imaginations to support modernization and the development of the new 4.0 era that is yet to be discovered.";
-}
-/*------------------------------------------------*/
