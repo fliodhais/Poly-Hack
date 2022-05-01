@@ -213,6 +213,7 @@ details[open] summary {
         display: none;
     }
     /* Welcome */
+    div#div1{height: 100%;}
     div#div1 h1{
         position: relative;
         top: 0;
@@ -226,7 +227,14 @@ details[open] summary {
         font-size: 1.5em;
         max-width: 40rem;
     }
+    #Discord, #regEng, #regKr{
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0.2em 0 1em 0;
+    }
     /* Theme */
+    div#div2{height: 100%;}
     div#div2 h1{
         position: relative;
         top: 0;
@@ -246,7 +254,7 @@ details[open] summary {
     /*-----------------------------------------------------*/
 
     /* Schedule */
-    div#div3{ max-height: 50vh; }
+    div#div3{height: 100%;}
     div#div3 h1{
         position: relative;
         top: 0;
@@ -261,6 +269,7 @@ details[open] summary {
         font-size: 1.5rem;
     }
     /* Prizes and Awards */
+    div#div4{height: 100%;}
     div#div4 h1{
         position: relative;
         top: 0;
@@ -273,11 +282,11 @@ details[open] summary {
         font-size: 1.5em;
     }
     /*---------------------FAQs---------------------------*/
+    div#divFAQ{height: 100%;}
     div#divFAQ{
         /*border: 1px solid #aaa;*/
         padding: 0;
         position: relative;
-        margin-top: 10em;
         margin-bottom: 5em;
     }
     div#divFAQ h1{ 
@@ -289,6 +298,7 @@ details[open] summary {
         padding: .5em .5em 0;
     }
     /*---------------------Organizers---------------------------*/
+    div#Organizers{height: 100%;}
     div#Organizers{
         padding: 0;
     }
@@ -298,6 +308,7 @@ details[open] summary {
     div#Organizers img{padding: 1em 0 1em 0; max-width: 100%; }
     div#Organizers img:hover{ transform: scale(1); }
     /*---------------------Sponsors---------------------------*/
+    div#Sponsors{height: 100%;}
     div#Sponsors{
         padding: 0;
     }
@@ -308,7 +319,7 @@ details[open] summary {
     #gCloud{max-width: 90%;}
     div#Sponsors img:hover{ transform: scale(1); }
     /*---------------------Supporting Organizations---------------------------*/
-    /* Supporting Organizations */
+    div#div5{height: 100%;}
     div#div5 h1{position: relative; left: 0; }
     div#div5 img{position: relative; margin-top: 1em; display: block;margin-left: auto; margin-right: auto;}
     div#div5 img#EDC{

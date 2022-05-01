@@ -37,7 +37,8 @@
 	transition: opacity 100ms linear;
 }
 
-.neon-button:hover{
+.neon-button:hover,
+.neon-button:focus{
 	background-color: var(--Megenta);
 	color: #230e2f;
 	text-shadow: none;
@@ -87,8 +88,45 @@
 .neon-button#schedule:hover::before{
 	opacity: 1;
 }
-
-.neon-button#schedule:hover{
+.neon-button#schedule:hover,
+.neon-button#schedule:focus{
 	background-color: var(--Brick-Red);
 	color: #170e39;
 }
+/*-----------------------------------------*/
+#Discord{
+	position: absolute;
+	bottom: 4rem;
+	right: 6rem;
+}
+#regEng{
+	position: absolute;
+	bottom: 4rem;
+	right: 20rem;
+}
+#regKr{
+	position: absolute;
+	bottom: 4rem;
+	right: 40rem;
+}
+.neon-button#Discord, .neon-button#regEng, .neon-button#regKr{
+	font-size: 1.5rem;
+	background-color: transparent;
+
+	color: var(--Orange);
+	border: var(--Orange) 0.125em solid;
+
+	text-shadow: 0 0 0.75em white, 0 0 0.125em var(--Orange);
+	box-shadow: 
+		inset 0 0 0.75em 0.1em var(--Orange), 
+		0 0 0.75em 0.1em var(--Orange);
+}
+.neon-button#Discord::after, .neon-button#regEng::after, .neon-button#regKr::after{
+	box-shadow: 0 0 0.75em 0.25em var(--Orange);
+}
+.neon-button#Discord:hover, .neon-button#regEng:hover, .neon-button#regKr:hover,
+.neon-button#Discord:focus, .neon-button#regEng:focus, .neon-button#regKr:focus{
+	background-color: var(--Orange);
+	color: #170e39;
+}
+/*-----------------------------------------*/
