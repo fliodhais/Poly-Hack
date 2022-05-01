@@ -54,7 +54,7 @@
 #schedule{
 	position: absolute;
 	top: 25rem;
-	right: 6rem;
+	right: 9rem; /*6*/
 }
 .neon-button#schedule{
 	font-size: 2.6rem;
@@ -96,17 +96,17 @@
 /*-----------------------------------------*/
 #Discord{
 	position: absolute;
-	bottom: 4rem;
+	bottom: 0.5rem;
 	right: 6rem;
 }
 #regEng{
 	position: absolute;
-	bottom: 4rem;
+	bottom: 0.5rem;
 	right: 20rem;
 }
 #regKr{
 	position: absolute;
-	bottom: 4rem;
+	bottom: 0.5rem;
 	right: 40rem;
 }
 .neon-button#Discord, .neon-button#regEng, .neon-button#regKr{
