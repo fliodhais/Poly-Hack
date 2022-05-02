@@ -6,204 +6,160 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="./asset/favicon.ico">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="icon" type="image/x-icon" href="./static/asset/favicon.ico">
     <!-- Need one Favicon -->
     <title>PolyHack</title>
 </head>
 <body>
 
     <div class="header">
-        <img class="logo" alt="PolyHack" src="./asset/PolyHack.png">
         <div class="header-right">
-            <a href="#Welcome" style="text-decoration: none;"><button class="button">Welcome</button></a>
-            <a href="#Theme" style="text-decoration: none;"><button class="button">Theme</button></a>
-            <a href="#Schedule" style="text-decoration: none;"><button class="button">Schedule</button></a>
-            <a href="#Prizes" style="text-decoration: none;"><button class="button">Prizes & Awards</button></a>
-            <a href="#FAQ" style="text-decoration: none;"><button class="button">Frequently Asked Questions</button></a>
-            <a href="#Sponsors" style="text-decoration: none;"><button class="button">Sponsors</button></a>
-        </div>
-    </div>
-    <div class="flexDisplay">
-        <div class="box">
-            <h1 class="title">PolyHack 2022</h1>
-        </div>
-        <div class="box" id="Welcome">
-            <h2>Welcome</h2>
-            <p>PolyHack is The Hong Kong Polytechnic University&apos;s largest hackathon. It is an Asia-wise competition organized by students. At PolyHack, we want to help you grow and bring your imaginations into reality. Regardless of your background, you will be able to participate with resources and mentors we will provide to help you progress with your projects. We will have free workshops, mentorships, prizes, games and more to help you learn new techniques for your future projects or just for you to explore outside of a classroom. Don&apos;t have a team, or even an idea? We&apos;ll help you expand your creativity to build an exceptional project!</p>
+            <a href="#Theme" style="text-decoration: none;"><button class="neon-button">Theme</button></a>
+            <a href="#div3" style="text-decoration: none;"><button class="neon-button">Schedule</button></a>
+            <a href="#Prizes" style="text-decoration: none;"><button class="neon-button">Prizes & Awards</button></a>
+            <a href="#FAQ" style="text-decoration: none;"><button class="neon-button">FAQs</button></a>
+            <a href="#Sponsors" style="text-decoration: none;"><button class="neon-button">Sponsors</button></a>
         </div>
     </div>
 
-    <br id="Theme"><br><br>
-
-    <h1 style="text-align: center;">Theme</h1>
-    <div class="image-frame">
-        <span class="text-content intro"><h2>Life in 4.0</h2>Explore the different, innovative technologies that can be implemented in the areas of blockchain, FinTech and Smart-city. Make use of your own imaginations to support modernization and the development of the new 4.0 era that is yet to be discovered.</span><img src="./asset/Theme.jpeg" alt="">
+    <div id="div1">
+        <h1 class="neon">PolyHack 2022</h1>
+        <p>PolyHack is The Hong Kong Polytechnic University&apos;s largest hackathon. It is an Asia-wise competition organized by students. At PolyHack, we want to help you grow and bring your imaginations into reality. Regardless of your background, you will be able to participate with resources and mentors we will provide to help you progress with your projects. We will have free workshops, mentorships, prizes, games and more to help you learn new techniques for your future projects or just for you to explore outside of a classroom. Don&apos;t have a team, or even an idea? We&apos;ll help you expand your creativity to build an exceptional project!</p>
+        
+        <a href="https://discord.com/invite/zMbdDBZn2b" target="_blank"><button class="neon-button" id="Discord">Join our Discord</button></a>
+        <a href="https://forms.gle/2NqhM1ZiaxTzSYCN8" target="_blank"><button class="neon-button" id="regEng">PolyHack Registration ENG</button></a>
+        <a href="https://forms.gle/72jENBF45YK5cFqG8" target="_blank"><button class="neon-button" id="regKr">PolyHack Registration KR</button></a>
     </div>
-    <!--
-    <div class="flexDisplay">
-        <div class="box">
-            <h2>FinTech</h2>
-            <p class="intro">To be updated</p>
-            <p class="intro">To be updated</p>
-            <p class="intro">To be updated</p>
-            <p class="intro">To be updated</p>
-        </div>
-        <div class="box">
-            <h2>Greentech</h2>
-            <p class="intro">To be updated</p>
-            <p class="intro">To be updated</p>
-            <p class="intro">To be updated</p>
-            <p class="intro">To be updated</p>
+    <div id="div2">
+        <h1 id="Theme">Theme</h1>
+        <div>
+            <h2 class="neon">Life in 4.0</h2>
+            <p class="neon-text">Explore the different, innovative technologies that can be implemented in the areas of blockchain, FinTech and Smart-city. Make use of your own imaginations to support modernization and the development of the new 4.0 era that is yet to be discovered.</p>
         </div>
     </div>
-    
-    <h2>Life in 4.0</h2>
-    <p class="intro">Explore the different, innovative technologies that can be implemented in the areas of blockchain, FinTech and Smart-city. Make use of your own imaginations to support modernization and the development of the new 4.0 era that is yet to be discovered.</p>
-    -->
-
-    <br id="Schedule"><br><br>
-
-    <h1 style="text-align: center;">Schedule</h1>
-    <h2 style="text-align: center; font-weight: normal; background-color: #d68db3;" class="scheduleBar">
-        <a href="https://teamup.com/ks2k8cbo21x77d9qb9" target="_blank" style="color: #000a39;">Check it out here for more details</a>
-    </h2>
-
-    <br id="Prizes"><br><br>
-
-    <h1 style="text-align: center;">Prizes & Awards</h1>
-    <div style="overflow-x:auto;">
-        <table style="width:100%;" rules="all" class="intro">
-            <tr>
-            <th>Champion</th>
-            <td>Cash Prize HK$20,000</td>
-            <td rowspan="5">
-                <ul>
-                    <li>Certificate of Award</li>
-                    <li>Internship opportunities</li>
-                    <li>Admission to PolyU Student Proof-of-Concept (POC)<br>Funding Scheme for up to HK$100,000 fund & pre-incubation supports</li>
-                </ul>
-            </td>
-            </tr>
-            <tr>
-            <th>1st runner up</th>
-            <td>Cash Prize HK$10,000</td>
-            </tr>
-            <tr>
-            <th>2nd runner up</th>
-            <td>Cash Prize HK$5,000</td>
-            </tr>
-            <tr>
-            <th>Merit</th>
-            <td>Cash Prize HK$500</td>
-            </tr>
-            <tr>
-            <th>Additional Rewards</th>
-            <td>Best ServiceNow Award<br>Most Innovative Award<br>Quantek Capital Research Award</td>
-            </tr>
-        </table>
+    <div id="div3">
+        <h1 id="Schedule">Schedule</h1>
+        <a href="https://teamup.com/ks2k8cbo21x77d9qb9" target="_blank"><button class="neon-button" id="schedule">Check it out here for more details</button></a>
+    </div>
+    <div id="div4">
+        <h1 id="Prizes">Prizes & Awards</h1>
+        <div style="overflow-x:auto;">
+            <table style="width:100%;" rules="all">
+                <tr>
+                <th>Champion</th>
+                <td>Cash Prize HK$20,000 + Deloitte internship + tech gadget worth 20k HKD</td>
+                <td rowspan="5">
+                    <ul>
+                        <li>Certificate of Award</li>
+                        <li>Internship opportunities<br>(Deloitte, Quantek Capital Research, HongKong Blockchain Society)</li>
+                        <li>Admission to PolyU Student Proof-of-Concept (POC)<br>Funding Scheme for up to HK$100,000 fund & pre-incubation supports</li>
+                    </ul>
+                </td>
+                </tr>
+                <tr>
+                <th>2nd place</th>
+                <td>Cash Prize HK$10,000 + Deloitte internship + tech gadget worth 10k HKD</td>
+                </tr>
+                <tr>
+                <th>3rd place</th>
+                <td>Cash Prize HK$5,000 + tech gadget worth 5k HKD</td>
+                </tr>
+                <tr>
+                <th>Merit</th>
+                <td>Cash Prize HK$500 + tech gadget worth 1k HKD</td>
+                </tr>
+                <tr>
+                <th>Additional Rewards</th>
+                <td>Best ServiceNow Award<br>Most Innovative Award<br>Quantek Capital Research Award</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
-    <br id="FAQ"><br><br>
-
-    <!-- ---------------------------------------------- General ---------------------------------------------- -->
-    <h1 style="text-align: center;">Frequently Asked Questions</h1>
-    <h2>General</h2>
-    <details>
-        <summary>What is a Hackathon?</summary>
-        <p class="intro">Hackathon is a derivative of Hack + Marathon where a large number of people gather to sprint through the production of a software project within a given time. There are workshops and mentors to guide you along your journey.</p>
-    </details>
-    <details>
-        <summary>Who is organizing PolyHack?</summary>
-        <p class="intro">PolyHack is organized by a group of students from the Google Developer Student Club PolyU. <br>Check out <a href="https://www.instagram.com/google_polyu/" target="_blank" style="color: #000a39;">here</a> to learn more about the organizers.</p>
-    </details>
-    <details>
-        <summary>What is different about PolyHack?</summary>
-        <p class="intro">PolyHack was made to help the students grow their knowledge beyond a normal classroom setting. Our hackathon is longer than the normal three day hack where we will offer extensive mentorship in order to shape your ideas into a market competitive solution. We will support you to become an entrepreneur with your product through mentorship, training and funding.</p>
-    </details>
-    <!-- ---------------------------------------------- Application ---------------------------------------------- -->
-    <h2>Application</h2>
-    <details>
-        <summary>Who can apply?</summary>
-        <p class="intro">If you&apos;re in your junior or senior year of highschool, enrolled in a college or university, you are eligible! </p>
-    </details>
-    <details>
-        <summary>Can we apply as a team?</summary>
-        <p class="intro">You may enter the hackathon as a team; however, each of your teammates will have to apply individually.</p>
-    </details>
-    <details>
-        <summary>What does it cost?</summary>
-        <p class="intro">PolyHack is free for all applicants. We do not expect any money from you, all we ask for is passion and enthusiasm to learn and expand your thinking! Rather, we will be giving you free workshops, mentorships and even prizes at the end!</p>
-    </details>
-    <!-- ---------------------------------------------- EVENT ---------------------------------------------- -->
-    <h2>Event</h2>
-    <details>
-        <summary>What if I don&apos;t have a team or idea?</summary>
-        <p class="intro">There is nothing to worry about. We will help you find teammates to join you on the journey and also mentors who will help you think of a project idea before and during the event.</p>
-    </details>
-    <details>
-        <summary>Do I have to know how to code to attend?</summary>
-        <p class="intro">You may enter the hackathon as a team; however, each of your teammates will have to apply individually.</p>
-    </details>
-    <details>
-        <summary>What does it cost?</summary>
-        <p class="intro">Not at all! We have alternative ways in which you can make projects with the platform we provide. We will have workshops to help you learn the platform so that your  projects stand competitive!</p>
-    </details>
-    <!-- ---------------------------------------------- Logistics ---------------------------------------------- -->
-    <h2>Logistics</h2>
-    <details>
-        <summary>What if I&apos;m an International Student not in Hong Kong?</summary>
-        <p class="intro">Due to the current pandemic, all events will be held in a virtual mode so just make sure you have a strong internet connection and you are good to go!</p>
-    </details>
-    <details>
-        <summary>I didn&apos;t find my questions here&#46;&#46;&#46;&#46;</summary>
-        <p class="intro">If you have any other questions, feel free to let us know at <a href="mailto:dsc.polyu@gmail.com" target="_blank" style="color: #000a39;">dsc.polyu@gmail.com</a></p>
-    </details>
-
-    <br id="Sponsors"><br><br>
-
-
-    <!--
-    row 1 GDSC KTEO CESAF
-    row 2 ServiceNow Deloitte Google Cloud
-    row 3 COP and then leave some space
-    row 4 FENG Comp EDC ESP
-    row 5 HKBS Toastmasters and leave some space
-    -->
-
-    <h1 style="text-align: center;">Sponsors</h1>
-    <h2 style="text-align: center; font-weight: normal;">Interested in sponsoring PolyHack 2022? Email us at <a href="mailto:dsc.polyu@gmail.com" target="_blank" style="color: #000a39;">dsc.polyu@gmail.com</a>!</h2>
-    <div class="row">
-        <a href="https://developers.google.com/community/gdsc" target="_blank"><img src="./asset/gdsc.png" class="row1"></a>
-        <a href="https://www.polyu.edu.hk/kteo/about-kteo/" target="_blank"><img src="./asset/KTEO.jpg" class="row1"></a>
-        <a href="https://www.polyu.edu.hk/af/cesef/" target="_blank"><img src="./asset/CESEF.png" class="row1"></a>
-    </div>
-    <div class="row">
-        <a href="https://www.servicenow.com/" target="_blank"><img src="./asset/ServiceNow_logo.svg.png" class="row1"></a>
-        <a href="https://www2.deloitte.com/cn/en.html" target="_blank"><img src="./asset/Deloitte_Logo.png" class="row1"></a>
-        <a href="https://cloud.google.com/" target="_blank"><img src="./asset/Google-Cloud-Logo.png" class="row1"></a>
-    </div>
-    <div class="row">
-        <a href="https://www.polyu.edu.hk/CoP/2020/index.html" target="_blank"><img src="./asset/COP.jpg" class="row3"></a>
+    <div id="divFAQ">
+        <h1 id="FAQ">Frequently Asked Questions</h1>
+        <h2 id="General">General</h2>
+        <details>
+            <summary>What is a Hackathon?</summary>
+            <p>Hackathon is a derivative of Hack + Marathon where a large number of people gather to sprint through the production of a software project within a given time. There are workshops and mentors to guide you along your journey.</p>
+        </details>
+        <details>
+            <summary>Who is organizing PolyHack?</summary>
+            <p>PolyHack is organized by a group of students from the Google Developer Student Club PolyU. <br>Check out <a href="https://www.instagram.com/google_polyu/" target="_blank" style="color: #fff;">here</a> to learn more about the organizers.</p>
+        </details>
+        <details>
+            <summary>What is different about PolyHack?</summary>
+            <p>PolyHack was made to help the students grow their knowledge beyond a normal classroom setting. Our hackathon is longer than the normal three day hack where we will offer extensive mentorship in order to shape your ideas into a market competitive solution. We will support you to become an entrepreneur with your product through mentorship, training and funding.</p>
+        </details>
+        <!-- ---------------------------------------------- Application ---------------------------------------------- -->
+        <h2 id="Application">Application</h2>
+        <details>
+            <summary>Who can apply?</summary>
+            <p>If you&apos;re in your junior or senior year of highschool, enrolled in a college or university, you are eligible! </p>
+        </details>
+        <details>
+            <summary>Can we apply as a team?</summary>
+            <p>You may enter the hackathon alone or as a team; however, each of your teammates will have to apply individually.</p>
+        </details>
+        <details>
+            <summary>What does it cost?</summary>
+            <p>PolyHack is free for all applicants. We do not expect any money from you, all we ask for is passion and enthusiasm to learn and expand your thinking! Rather, we will be giving you free workshops, mentorships and even prizes at the end!</p>
+        </details>
+        <!-- ---------------------------------------------- EVENT ---------------------------------------------- -->
+        <h2 id="Event">Event</h2>
+        <details>
+            <summary>What if I don&apos;t have a team or idea?</summary>
+            <p>There is nothing to worry about. We will help you find teammates to join you on the journey and also mentors who will help you think of a project idea before and during the event.</p>
+        </details>
+        <details>
+            <summary>Do I have to know how to code to attend?</summary>
+            <p>Not at all! We have alternative ways in which you can make projects with the platform we provide. We will have workshops to help you learn the platform so that your  projects stand competitive!</p>
+        </details>
+        <details>
+            <summary>What can I build?</summary>
+            <p>That is all up to you! You have the freedom to build web, mobile, gaming, VR&#46;&#46;&#46;&#46;anything that you are passionate about. We will support you with any initiative you take in order to build a proud project!</p>
+        </details>
+        <!-- ---------------------------------------------- Logistics ---------------------------------------------- -->
+        <h2 id="Logistics">Logistics</h2>
+        <details>
+            <summary>What if I&apos;m an International Student not in Hong Kong?</summary>
+            <p>Due to the current pandemic, all events will be held in a virtual mode so just make sure you have a strong internet connection and you are good to go!</p>
+        </details>
+        <details>
+            <summary>I didn&apos;t find my questions here&#46;&#46;&#46;&#46;</summary>
+            <p>If you have any other questions, feel free to let us know at <a href="mailto:dsc.polyu@gmail.com" target="_blank" style="color: #fff;">dsc.polyu@gmail.com</a></p>
+        </details>
     </div>
 
-    <br><br><br><br><br><br>
-
-    <div class="row">
-        <a href="https://www.polyu.edu.hk/feng/" target="_blank"><img src="./asset/FENG.png" class="row4"></a>
-        <a href="https://www.polyu.edu.hk/comp/" target="_blank"><img src="./asset/COMP.png" class="row4"></a>
-        <a href="https://www.polyu.edu.hk/edc/" target="_blank"><img src="./asset/EDC.png" class="row4"></a>
-        <a href="https://edc.polyu.edu.hk/esp//" target="_blank"><img src="./asset/ExposureStudioProduction.jpg" class="row4"></a>
-    </div>
-    <div class="row">
-        <a href="https://www.hkbcs.org/" target="_blank"><img src="./asset/HKBS.png"  class="row5"></a>
-        <a href="https://www.toastmasters.org/Find-a-Club/01252073-01252073" target="_blank"><img src="./asset/ToastMasters.jpg"  class="row5"></a>
+    <div id="Organizers">
+        <h1>Organizers</h1>
+        <a href="https://developers.google.com/community/gdsc" target="_blank"><img src="./static/asset/gdsc.png"></a>
+        <a href="https://www.polyu.edu.hk/kteo/about-kteo/" target="_blank"><img src="./static/asset/KTEO.png"></a>
+        <a href="https://www.polyu.edu.hk/af/cesef/" target="_blank"><img src="./static/asset/CESEF.png"></a>
     </div>
 
-    <br><br><br><br><br><br>
+    <div id="Sponsors">
+        <h1>Sponsors</h1>
+        <h2 style="font-weight: normal;">Interested in sponsoring PolyHack 2022? Email us at <a href="mailto:dsc.polyu@gmail.com" target="_blank" style="color: var(--Dark-Purple);">dsc.polyu@gmail.com</a>!</h2>
+        <a href="https://www2.deloitte.com/cn/en.html" target="_blank"><img src="./static/asset/Deloitte_Logo.png" id="Deloitte"></a>
+        <a href="https://www.servicenow.com/" target="_blank"><img src="./static/asset/ServiceNow_logo.svg.png" id="ServiceNow"></a>
+        <a href="https://www.polyu.edu.hk/CoP/2020/index.html" target="_blank"><img src="./static/asset/COP.png" id="COP"></a>
+        <a href="https://cloud.google.com/" target="_blank"><img src="./static/asset/Google-Cloud-Logo.png" id="gCloud"></a>
+    </div>
+
+    <div id="div5">
+        <h1>Supporting Organizations</h1>
+        <a href="https://www.polyu.edu.hk/edc/" target="_blank"><img src="./static/asset/EDC.png" id="EDC"></a>
+        <a href="https://edc.polyu.edu.hk/esp//" target="_blank"><img src="./static/asset/ExposureStudioProduction.png" id="ESP"></a>
+        <a href="https://www.polyu.edu.hk/feng/" target="_blank"><img src="./static/asset/FENG.png" id="FENG"></a>
+        <a href="https://www.polyu.edu.hk/comp/" target="_blank"><img src="./static/asset/COMP.png" id="COMP"></a>
+        <a href="https://www.hkbcs.org/" target="_blank"><img src="./static/asset/HKBS.png" id="HKBS"></a>
+        <a href="https://www.toastmasters.org/Find-a-Club/01252073-01252073" target="_blank"><img src="./static/asset/ToastMasters.jpg" id="Toast"></a>
+    </div>
 
 </body>
 
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<script src="smoothScroll.js"></script>
+<script src="./static/smoothScroll.js"></script>
 </html>

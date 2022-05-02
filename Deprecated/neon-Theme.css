@@ -1,0 +1,30 @@
+@import "color-var.css";
+/* This CSS is not used, deprecated */
+
+.neonTheme{
+	color: #fff;
+	animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    
+  0%, 10%, 20%, 30%, 50%, 100% {
+      text-shadow:
+		0 0 10px #fff,
+        0 0 20px #fff, 
+        0 0 40px #fff,
+        0 0 80px var(--Purple),
+        0 0 100px var(--Purple),
+        0 0 100px var(--Purple);
+  }
+  
+  5%, 15%, 25%, 40% {        
+      text-shadow:
+		0 0 5px #fff,
+        0 0 10px #fff, 
+        0 0 20px #fff,
+        0 0 40px var(--Purple),
+        0 0 50px var(--Purple),
+        0 0 50px var(--Purple);
+  }    
+}

@@ -1,0 +1,373 @@
+@import "neon-button.css";
+@import "neon-text.css";
+body { 
+    font-family: 'Dosis', sans-serif;
+    color: white;
+
+    background: #230e2f; /*For website that does not support gradient*/
+    background: -webkit-linear-gradient(#230e2f, #260d2d, #220e33, #170e39, #0b113e, #0b1143);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div#div1 h1,
+div#div2 h1,
+div#div3 h1,
+div#div4 h1,
+div#div5 h1{position: absolute; font-size: 4rem;}
+
+.header {
+    width: 100vw;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 150;
+}
+.header-right {
+    padding-right: 50px;
+    float: right;
+}
+
+#div1, #div2, #div3, #div4, #div5{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./static/images/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /*border: 2px solid white;*/
+}
+#div1{background-image: url("./images/1.png");}
+#div2{background-image: url("./images/2.png");}
+#div3{background-image: url("./images/3.png");}
+#div4{background-image: url("./images/4.png");}
+#div5{background-image: url("./images/5.png");}
+
+/* Welcome */
+div#div1 h1{
+    top: 8rem;
+    right: 22rem; /*20*/
+}
+/* Welcome */
+div#div1 p{
+    position: absolute;
+    top: 20rem;
+    right: 7.5rem; /*5.5*/
+    font-size: 1.5em;
+    max-width: 40rem;
+}
+
+/* Theme */
+div#div2 h1{
+    top: 8rem;
+    left: 18rem; /*15*/
+}
+
+/* Schedule */
+div#div3 h1{
+    top: 10rem;
+    right: 21rem; /*18*/
+}
+
+/* Prizes and Awards */
+div#div4 h1{
+    top: 3rem;
+    left: 20rem;
+}
+/* Prizes and Awards */
+div#div4 div{
+    padding: 14rem 15rem 3rem 15rem;
+}
+/* Supporting Organizations */
+div#div5 h1{
+    position: relative;
+    padding-left: 5rem;
+}
+
+/*---------------------Organizers---------------------------*/
+div#Organizers{
+    border: 1px solid transparent;
+    padding: 0 5em 5em 5em;
+    background-color: var(--wh-blue);
+}
+div#Organizers h1{ color: var(--Dark-Purple); text-align: center; font-size: 4rem; }
+div#Organizers img{ max-width: 29%; padding: 0 1em 0 1em;}
+div#Organizers img:hover{ transform: scale(1.2); }
+/*---------------------Sponsors---------------------------*/
+div#Sponsors{
+    border: 1px solid transparent;
+    padding: 0 5em 5em 5em;
+    background-color: var(--wh-blue);
+}
+div#Sponsors h1{ text-align: center; color: var(--Dark-Purple); font-size: 4rem; }
+div#Sponsors h2{ text-align: center; color: var(--Dark-Purple); }
+div#Sponsors img{ display: block; margin-right: auto; margin-left: auto; padding: 1.5em;}
+#Deloitte{max-width: 25%;}
+#ServiceNow{max-width: 35%;}
+#COP{max-width: 35%;}
+#gCloud{max-width: 35%;}
+div#Sponsors img:hover{ transform: scale(1.2); }
+/*---------------------Supporting Organizations---------------------------*/
+div#div5 img{ 
+    position: relative;
+    background-color: var(--wh-blue);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0 2vw 2vw 2vw;
+}
+div#div5 img#EDC{
+    width: 25%;
+}
+div#div5 img#ESP{
+    width: 25%;
+}
+div#div5 img#FENG{
+    width: 25%;
+}
+div#div5 img#COMP{
+    width: 25%;
+}
+div#div5 img#Toast{
+    width: 25%;
+}
+div#div5 img#HKBS{
+    width: 25%;
+}
+div#div5 img:hover{ transform: scale(1.2); }
+/*---------------------Theme---------------------------*/
+div#div2 div{
+    position: absolute;
+    top: 18rem;
+    left: 8.5rem; /*8.5*/
+    max-width: 33%; /* Relative to #div2 (width = full width) */
+    /*border: 1px solid white;*/
+    padding: 0 2em 2em 2em;
+}
+div#div2 h2{ font-size: 3rem; }
+div#div2 p{ font-size: 1.5rem; }
+/*---------------------Prizes---------------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  
+  border: 0.15em solid var(--Megenta);
+  box-shadow: inset 0 0 0.5em 0.25em var(--Megenta), 0 0 0.5em 0.25em var(--Megenta);
+
+  font-size: 2vw;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+/*---------------------FAQs---------------------------*/
+div#divFAQ{
+    /*border: 1px solid red;*/
+    padding: 10em;
+}
+div#divFAQ h1{ font-size: 4rem; }
+div#divFAQ h2{ font-size: 2rem; }
+/* Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-size: 3vh;
+    margin: -.5em 0 0;
+    padding: .5em;
+}
+
+details[open] {
+    border: 0.15em solid var(--Orange);
+    box-shadow: inset 0 0 0.5em 0.25em var(--Orange), 0 0 0.5em 0.25em var(--Orange), inset 0 0 0.25em 0 #fff, 0 0 0.25em 0 #fff;
+    font-size: 1.7em;
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+/*----------------------------------------------------*/
+@media only screen and (max-width: 620px){
+    body{
+        width: 100%;
+        padding: 0;
+    }
+    #div1, #div2, #div3, #div4, #div5{
+        background-image: none;
+    }
+    .header{
+        display: none;
+    }
+    /* Welcome */
+    div#div1{height: 100%;}
+    div#div1 h1{
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+    }
+    /* Welcome */
+    div#div1 p{
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+
+        font-size: 1.5em;
+        max-width: 40rem;
+    }
+    #Discord, #regEng, #regKr{
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0.2em 0 1em 0;
+    }
+    .neon-button#Discord, .neon-button#regEng, .neon-button#regKr{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div#div1 a{
+        text-decoration: none;
+    }
+    /* Theme */
+    div#div2{height: 100%;}
+    div#div2 h1{
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    /*---------------------Theme---------------------------*/
+    div#div2 div{
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 100vw; /* Relative to #div2 (width = full width) */
+        /*border: 1px solid white;*/
+        padding: 0;
+    }
+    div#div2 h2{ font-size: 3rem; text-align: center;}
+    div#div2 p{ font-size: 1.5rem; text-align: center;}
+    /*-----------------------------------------------------*/
+
+    /* Schedule */
+    div#div3{height: 100%;}
+    div#div3 h1{
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    #schedule{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .neon-button#schedule{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+    }
+    div#div3 a{
+        text-decoration: none;
+    }
+    /* Prizes and Awards */
+    div#div4{height: 100%;}
+    div#div4 h1{
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    div#div4 div{
+        padding: 0;
+    }
+    table{
+        max-width: 100vw;
+        font-size: 1.5em;
+    }
+    /*---------------------FAQs---------------------------*/
+    div#divFAQ{height: 100%;}
+    div#divFAQ{
+        /*border: 1px solid #aaa;*/
+        padding: 0;
+        position: relative;
+        margin-bottom: 5em;
+    }
+    div#divFAQ h1{ 
+        text-align: center;
+        font-size: 3rem;
+    }
+    details {
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: .5em .5em 0;
+    }
+    /*---------------------Organizers---------------------------*/
+    div#Organizers{height: 100%;}
+    div#Organizers{
+        padding: 0;
+    }
+    div#Organizers h1{
+        text-align: center;
+    }
+    div#Organizers img{padding: 1em 0 1em 0; max-width: 100%; }
+    div#Organizers img:hover{ transform: scale(1); }
+    /*---------------------Sponsors---------------------------*/
+    div#Sponsors{height: 100%;}
+    div#Sponsors{
+        padding: 0;
+    }
+    div#Sponsors img{padding: 1em 0 1em 0;}
+    #Deloitte{max-width: 80%;}
+    #ServiceNow{max-width: 100%;}
+    #COP{max-width: 90%;}
+    #gCloud{max-width: 90%;}
+    div#Sponsors img:hover{ transform: scale(1); }
+    /*---------------------Supporting Organizations---------------------------*/
+    div#div5{height: 100%;}
+    div#div5 h1{position: relative; padding-left: 0; text-align: center;}
+    div#div5 img{position: relative; margin-top: 1em; display: block;margin-left: auto; margin-right: auto;}
+    div#div5 img#EDC{
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    div#div5 img#ESP{
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    div#div5 img#FENG{
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    div#div5 img#COMP{
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    div#div5 img#Toast{
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    div#div5 img#HKBS{
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    div#div5 img:hover{ transform: scale(1); }
+}

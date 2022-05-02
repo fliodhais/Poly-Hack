@@ -1,0 +1,60 @@
+@import "color-var.css";
+.neon {
+  color: #fff;
+  animation: neon 0.7s ease-in-out infinite alternate;
+}
+@keyframes neon {
+  from {
+    text-shadow: 
+        0 0 10px #fff,
+        0 0 20px #fff, 
+        0 0 40px #fff,
+        0 0 80px var(--Orange),
+        0 0 100px var(--Orange),
+        0 0 100px var(--Megenta);
+  }
+  to {
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px var(--Orange),
+        0 0 35px var(--Orange),
+        0 0 35px var(--Megenta);
+  }
+}
+
+div#div2 h2.neon{
+  animation: neon2 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 
+        0 0 10px #fff,
+        0 0 20px #fff, 
+        0 0 40px #fff,
+        0 0 80px var(--Purple),
+        0 0 120px var(--Purple),
+        0 0 120px var(--Purple2);
+  }
+  to {
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px var(--Purple),
+        0 0 35px var(--Purple),
+        0 0 35px var(--Purple2);
+  }
+}
+
+.neon-text{
+  text-shadow: 
+        0 0 10px #fff,
+        0 0 20px var(--Purple), 
+        0 0 100px var(--Purple);
+  /* Too much text shadow cause scroll lag, kick out the GPU used by 3D operations */
+  /* Reference: https://stackoverflow.com/questions/5811974/text-shadow-and-other-css3-causes-scroll-lag */
+  -webkit-transform: translate3d(0,0,0);
+}
